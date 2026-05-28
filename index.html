@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenden</title>
+
+    <!--Using Tailwind CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <!--Responsive Navbar-->
+    <nav
+      class="bg-green-100 p-3  flex items-center justify-between shadow-xl sticky top-0 z-10"
+    >
+      <a href="./index.html"><h1 class="text-2xl font-medium ml-7">GREENDEN</h1></a>
+
+      <!--Link from hero iocn for adding menu icon-->
+      <svg
+        class="w-7 h-7 hidden sm:flex md:hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h6 max-[640px]:flex sm:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+        />
+      </svg>
+
+      <div class="flex gap-5 text-gray-600 hidden md:flex">
+        <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        <a class="hover:underline hover:text-black" href="./product.html">Product</a>
+        <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+      </div>
+    </nav>
+    <!--Header Section-->
+    <section class="bg-green-100 flex justify-center">
+      <div class="m-5">
+        <p class="mb-5 mt-10">
+          We Offer You a Wide Range Of Artificial and Natural Flowers
+        </p>
+        <h2 class="font-bold text-3xl mb-5">Plants For Your Interior</h2>
+        <div>
+          <button class="bg-black text-white p-2 rounded">Shop Now</button>
+          <button class="border border-black p-2 rounded">Watch Video</button>
+        </div>
+        <p class="mt-5">160+ Plant Species | 100+ Clients</p>
+      </div>
+
+      <div class="hidden md:block">
+        <img
+          class="w-60 h-60 object-cover ml-5 p-5 mt-5 rounded-full"
+          src="./Images/Section Image.jpg"
+          alt="Header Image"
+        />
+      </div>
+    </section>
+
+    <!--About Section-->
+    <div class="text-center m-3">
+      <h1 class="text-3xl font-bold mt-5">About Us</h1>
+      <p>This site for those who admire the beauty and harmony of nature</p>
+      <div class="md:flex">
+        <div class="border border-black m-6 p-2 rounded-xl lg:border-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 inline mb-5 lg:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75"
+            />
+          </svg>
+          <img
+            class="hidden lg:block mb-5 w-full h-72 object-cover rounded-xl"
+            src="./Images/aboutsection1.jpg"
+            alt="Image1"
+          />
+
+          <h2 class="text-2xl font-medium">Large Assortment</h2>
+          <p>
+            Discover a large assortment of breathtaking natural destinations,
+            scenic landscapes, and unforgettable outdoor experiences. From lush
+            green forests and peaceful beaches to majestic mountains and vibrant
+            wildlife, explore the beauty of nature in every form and create
+            memories that last a lifetime.
+          </p>
+        </div>
+        <div class="border border-black m-6 p-2 rounded-xl lg:border-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{1.5}"
+            stroke="currentColor"
+            class="w-10 inline mb-5 lg:hidden"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            />
+          </svg>
+          <img
+            class="hidden lg:block mb-5 w-full h-72 object-cover rounded-xl"
+            src="./Images/aboutsection2.jpg"
+            alt="Image 2"
+          />
+
+          <h2 class="text-2xl font-medium">Free and Fast Shipping</h2>
+
+          <p>
+            Enjoy a seamless shopping experience with our free and fast shipping
+            service designed to deliver your favorite products quickly and
+            securely. We ensure timely doorstep delivery with no extra shipping
+            charges, so you can shop with confidence and convenience every time.
+          </p>
+        </div>
+        <div class="border border-black m-6 p-2 rounded-xl lg:border-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-10 inline mb-5 lg:hidden"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
+            />
+          </svg>
+          <img
+            class="hidden lg:block mb-5 w-full h-72 object-cover rounded-xl"
+            src="./Images/aboutsection3.jpg"
+            alt="image 3"
+          />
+          <h2 class="text-2xl font-medium">24/7 Support</h2>
+          <p>
+            Our dedicated 24/7 support team is always available to assist you
+            anytime, anywhere. Whether you have questions, need help with your
+            orders, or require quick solutions, we are committed to providing
+            reliable and friendly customer support around the clock to ensure a
+            smooth and stress-free experience.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Best Seller-->
+    <section class="text-center mb-5">
+      <h1 class="text-3xl font-bold">Best Seller</h1>
+      <div class="grid grid-cols-2 m-5 gap-5 mt-10 md:grid-cols-4">
+        <div>
+          <img src="./Images/bestseller1.png" alt="Besr Seller 1" class="inline rounded-xl hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" />
+          <h1>Pink Flower with pot</h1>
+          <p>$20</p>
+          <div class=" p-2 w-fit bg-black md:bg-green-300 text-black rounded-xl inline-flex gap-3 justify-center items-center">
+          <button class="hidden md:block">Add to cart</button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" cursor-pointer text-white md:text-black w-5 h-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+</svg>
+          </div>
+        </div>
+        <div>
+          <img src="./Images/bestseller2.png" alt="Besr Seller 2" class="inline rounded-xl hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" />
+          <h1>Purple Flower with pot</h1>
+          <p>$20</p>
+          <div class=" p-2 w-fit bg-black md:bg-green-300 text-black rounded-xl inline-flex gap-3 justify-center items-center">
+          <button class="hidden md:block">Add to cart</button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cursor-pointer text-white md:text-black w-5 h-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+</svg>
+          </div>
+        </div>
+        <div>
+          <img src="./Images/bestseller3.png" alt="Besr Seller 3" class="inline rounded-xl hover:shadow-xl transform hover:-translate-y-2 cursor-pointer"/>
+          <h1>Plant with pot</h1>
+          <p>$20</p>
+          <div class=" p-2 w-fit bg-black md:bg-green-300 text-black rounded-xl inline-flex gap-3 justify-center items-center">
+          <button class="hidden md:block">Add to cart</button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cursor-pointer text-white md:text-black w-5 h-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+</svg>
+          </div>
+        </div>
+        <div>
+          <img src="./Images/bestseller4.png" alt="Besr Seller 4" class="inline rounded-xl hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" />
+          <h1>Snake Plant with pot</h1>
+          <p>$20</p>
+          <div class=" p-2 w-fit bg-black md:bg-green-300 text-black rounded-xl inline-flex gap-3 justify-center items-center">
+          <button class="hidden md:block">Add to cart</button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" cursor-pointer text-white md:text-black w-5 h-5">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+</svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Customer Review-->
+    <section class="p-5 m-3">
+      <h1 class="text-center font-bold text-3xl  p-5">Customer Reviews</h1>
+      <div>
+        <div class="bg-green-600 text-white italic m-auto mb-5 p-10 container rounded">
+          <p>“I recently ordered a few indoor plants from this website, and I’m extremely happy with the quality. The plants arrived fresh, healthy, and carefully packed without any damage. Their collection is beautiful, and the website makes shopping very simple and enjoyable.”</p>
+          <p class="text-yellow-400 font-bold">- Arul</p>
+      
+            <p class="text-1xl">★ ★ ★ ★ ★</p>
+       
+        </div>
+         <div class="bg-green-600 text-white italic m-auto mb-5 p-10 container rounded">
+          <p>“This is one of the best online plant stores I have come across. The plants look exactly like the pictures shown on the website, and the pots are stylish and affordable. Delivery was quick, and the customer support team was very friendly and helpful throughout the process.”</p>
+          <p class="text-yellow-400 font-bold">- Priya</p>
+        <p class="text-1xl">★ ★ ★ ★ ★</p>
+        </div>
+         <div class="bg-green-600 text-white italic m-auto mb-5 p-10 container rounded">
+          <p>“The website has a large assortment of beautiful plants for both indoor and outdoor decoration. I loved the smooth shopping experience and fast shipping service. Everything arrived safely packed, and the plants were in excellent condition.”</p>
+          <p class="text-yellow-400 font-bold">- Aravind</p>
+          <p class="text-1xl">★ ★ ★ ★ ★</p>
+        </div>
+      </div>
+    </section>
+
+    <!--News Letter-->
+    <section>
+      <div class="text-center">
+        <h1 class="text-3xl font-bold ">Join Our News Letter</h1>
+        <p class="m-3">Sign-up for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="mt-5 flex justify-center items-center flex-col">
+        <input class="border border-green-600 w-1/2 p-2 rounded-2xl focus:outline-none shadow-xl" type="text" placeholder="Type here...">
+        <button class="m-5 bg-green-600 text-white p-2 rounded hover:underline">Subscribe</button>
+</div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-green-100">
+      <div class="p-5 ml-10 flex flex-col gap-5">
+        <h1 class="text-2xl font-bold text-green-700">Greenden</h1>
+        <p>Bring nature closer to your home with beautiful and fresh plants.</p>
+        <p>&copy; 2026 Greenden website by Arulpriya</p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenden-Product</title>
+    <!--Using Tailwind CSS CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Responsive Navbar-->
+    <nav
+      class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10"
+    >
+      <a href="/index.html"><h1 class="text-2xl font-medium ml-7">GREENDEN</h1></a>
+
+      <!--Link from hero iocn for adding menu icon-->
+      <svg
+        class="w-7 h-7 hidden sm:flex md:hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h6 max-[640px]:flex sm:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+        />
+      </svg>
+
+      <div class="flex gap-5 text-gray-600 hidden md:flex">
+        <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        <a class="hover:underline hover:text-black" href="./product.html"
+          >Product</a
+        >
+        <a class="hover:underline hover:text-black" href="./contact.html"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!--Contact Form-->
+    <section class="">
+      <div class=" text-center p-2 m-5">
+        <h1 class="text-3xl font-bold">Contact us</h1>
+        <p class="mt-5 text-gray-500">
+          Have a question, need support, or want to discuss? We are here to help
+          you.
+        </p>
+      </div>
+      <div class="flex justify-center items-center">
+      <form>
+        
+          <div class="flex flex-col">
+            <label class="text-gray-500">Name</label>
+            <input class=" mt-2 w-96 p-2 border border-gray-400 rounded focus:outline-none" type="text" placeholder="Enter your name" />
+          </div>
+          <div class="flex flex-col mt-5">
+            <label class="text-gray-500">Email</label>
+            <input class="mt-2 w-96 p-2 border border-gray-400 rounded focus:outline-none" type="text" placeholder="Enter your emailID" />
+          </div>
+          <div class="flex flex-col mt-5">
+            <label class="text-gray-500">Phone no</label>
+            <input class="mt-2 w-96 p-2 border border-gray-400 rounded focus:outline-none" type="text" placeholder="Enter your phone no" />
+          </div>
+          <div class="flex flex-col mt-5">
+            <label class="text-gray-500">Company</label>
+            <input class="mt-2 w-96 p-2 border border-gray-400 rounded focus:outline-none" type="text" placeholder="Enter your Company" />
+          </div>
+          <div class="flex flex-col mt-5">
+            <label class="text-gray-500">Message</label>
+            <textarea class="mt-2 w-96 p-2 border border-gray-400 rounded focus:outline-none" placeholder="Message"></textarea>
+          </div>
+          <button class="bg-green-600 text-white px-5 py-2 mt-5 mb-10 rounded-xl hover:bg-green-900">Submit</button>
+        
+      </form>
+      </div>
+    </section>
+    <!--Footer-->
+    <section class="bg-green-100">
+      <div class="p-5 ml-10 flex flex-col gap-5">
+        <h1 class="text-2xl font-bold text-green-700">Greenden</h1>
+        <p>Bring nature closer to your home with beautiful and fresh plants.</p>
+        <p>&copy; 2026 Greenden website by Arulpriya</p>
+      </div>
+    </section>
+  </body>
+</html>
