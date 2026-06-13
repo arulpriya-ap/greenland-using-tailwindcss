@@ -14,10 +14,10 @@
     <nav
       class="bg-green-100 p-3  flex items-center justify-between shadow-xl sticky top-0 z-10"
     >
-      <a href="/index.html"><h1 class="text-2xl font-medium ml-7">GREENDEN</h1></a>
+      <a href="./index.html"><h1 class="text-2xl font-medium ml-7">GREENDEN</h1></a>
 
       <!--Link from hero iocn for adding menu icon-->
-      <svg
+      <svg id="menuicon1"
         class="w-7 h-7 hidden sm:flex md:hidden"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -33,7 +33,7 @@
         />
       </svg>
 
-      <svg
+      <svg id="menuicon2"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -54,68 +54,81 @@
         <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
       </div>
     </nav>
+    <!--Side Nav Bar-->
+    <section id="sidenav" class="bg-green-100 fixed top-0 z-20 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;" >
+      <div class="text-right p-2">
+        <p id="closeicon" class="inline cursor-pointer">X</p>
+      </div>
+    <div class="flex flex-col items-center gap-10 text-gray-600">
+        <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        <a class="hover:underline hover:text-black" href="./product.html">Product</a>
+        <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+      </div>
+      </section>
     <!--product Page-->
     <section class="text-center m-10">
         <div>
         <h1 class="text-3xl font-bold">Our Products</h1>
         <div class="flex flex-col justify-center items-center md:flex-row">
-        <input class= "border border-green-600 w-2/3 sm:w-1/2 p-3 focus:outline-none m-5 rounded-2xl shadow-2xl" type="text" placeholder="Search for a product...">
-        <button class="bg-green-600 text-white font-semibold p-3 rounded-2xl">Search</button>
+        <input id="searchBox" class= "border border-green-600 w-2/3 sm:w-1/2 p-3 focus:outline-none m-5 rounded-2xl shadow-2xl" type="text" placeholder="Search for a product...">
+        <button id="searchbtn" class="bg-green-600 text-white font-semibold p-3 rounded-2xl">Search</button> <br><br>
+        
+      </div>
+      <h1 id="notfound" class="text-2xl font-bold" style="display: none;">Not found</h1>
         </div>
-        </div>
-        <div class=" mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
+        <div id="productContainer" class=" mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
             <div>
-                <img class="inline shadow-2xl" src="/Images/bestseller1.png" alt="Product 1">
-                <p class="font-semibold m-3">Pink flower Plant</p>
+                <img class="inline shadow-2xl" src="./Images/bestseller1.png" alt="Product 1">
+                <h3 class="font-semibold m-3">Pink flower Plant</h3>
                 <p class="italic">A miniature artistic tree that symbolizes harmony, balance, and peace.</p>
                 <p class="bg-black text-white w-fit inline-flex py-1 px-2 m-2">$ 20</p>
                 <p class="bg-green-600 text-white py-1 px-2 inline-flex rounded hover:bg-green-900 cursor-pointer">Add to cart</p>
             </div>
             <div>
                 <img class="inline shadow-2xl" src="./Images/bestseller2.png" alt="Product 2">
-                <p class="font-semibold m-3">Purple flower Plant</p>
+                <h3 class="font-semibold m-3">Purple flower Plant</h3>
                 <p class="italic">A fragrant plant known for its calming aroma and beautiful purple flowers.</p>
                 <p class="bg-black text-white w-fit inline-flex p-1 px-2 m-2">$ 30</p>
                 <p class="bg-green-600 text-white py-1 px-2 inline-flex rounded hover:bg-green-900 cursor-pointer">Add to cart</p>
             </div>
             <div>
                 <img class="inline shadow-2xl" src="./Images/bestseller3.png" alt="Product 3">
-                <p class="font-semibold m-3">Pot Plant</p>
+                <h3 class="font-semibold m-3">Pot Plant</h3>
                 <p class="italic">An attractive hanging plant with long striped leaves that is easy to grow and maintain.</p>
                 <p class="bg-black text-white w-fit inline-flex p-1 px-2 m-2">$ 50</p>
                 <p class="bg-green-600 text-white py-1 px-2 inline-flex rounded hover:bg-green-900 cursor-pointer">Add to cart</p>
             </div>
             <div>
                 <img class="inline shadow-2xl" src="./Images/bestseller4.png" alt="Product 4">
-                <p class="font-semibold m-3">Snake Plant with Pot</p>
+                <h3 class="font-semibold m-3">Snake Plant with Pot</h3>
                 <p class="italic">A low-maintenance indoor plant known for its air-purifying qualities and elegant upright leaves.</p>
                 <p class="bg-black text-white w-fit inline-flex p-1 px-2 m-2">$ 10</p>
                 <p class="bg-green-600 text-white py-1 px-2 inline-flex rounded hover:bg-green-900 cursor-pointer">Add to cart</p>
             </div>
             <div>
                 <img class="inline shadow-2xl" src="./Images/product5.png" alt="Product 5">
-                <p class="font-semibold m-3">Indoor Plant with pot</p>
+                <h3 class="font-semibold m-3">Indoor Plant with pot</h3>
                 <p class="italic">A popular indoor plant believed to bring positivity, prosperity, and good luck.</p>
                 <p class="bg-black text-white w-fit inline-flex p-1 px-2 m-2">$ 20</p>
                 <p class="bg-green-600 text-white py-1 px-2 inline-flex rounded hover:bg-green-900 cursor-pointer">Add to cart</p>
             </div>
             <div>
                 <img class="inline shadow-2xl" src="./Images/product6.png" alt="Product 6">
-                <p class="font-semibold m-3">Hibiscus Plant</p>
+                <h3 class="font-semibold m-3">Hibiscus Plant</h3>
                 <p class="italic">A fragrant plant known for its calming aroma and beautiful purple flowers.</p>
                 <p class="bg-black text-white w-fit inline-flex p-1 px-2 m-2">$ 30</p>
                 <p class="bg-green-600 text-white py-1 px-2 inline-flex rounded hover:bg-green-900 cursor-pointer">Add to cart</p>
             </div>
             <div>
                 <img class="inline shadow-2xl" src="./Images/product7.png" alt="Product 7">
-                <p class="font-semibold m-3">Violet Plant</p>
+                <h3 class="font-semibold m-3">Violet Plant</h3>
                 <p class="italic">A fragrant plant known for its calming aroma and beautiful purple flowers.</p>
                 <p class="bg-black text-white w-fit inline-flex p-1 px-2 m-2">$ 50</p>
                 <p class="bg-green-600 text-white py-1 px-2 inline-flex rounded hover:bg-green-900 cursor-pointer">Add to cart</p>
             </div>
             <div>
                 <img class="inline shadow-2xl" src="./Images/product8.png" alt="Product 8">
-                <p class="font-semibold m-3">Inddor Plant With Pot</p>
+                <h3 class="font-semibold m-3">Inddor Plant With Pot</h3>
                 <p class="italic">A beautiful flowering plant that adds freshness and helps improve indoor air quality.</p>
                 <p class="bg-black text-white w-fit inline-flex p-1 px-2 m-2">$ 10</p>
                 <p class="bg-green-600 text-white py-1 px-2 inline-flex rounded hover:bg-green-900 cursor-pointer">Add to cart</p>
@@ -131,6 +144,9 @@
         <p>&copy; 2026 Greenden website by Arulpriya</p>
       </div>
     </section>
+    <script src="product.js">
+
+    </script>
     
 </body>
 </html>

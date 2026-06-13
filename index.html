@@ -18,7 +18,7 @@
       <a href="./index.html"><h1 class="text-2xl font-medium ml-7">GREENDEN</h1></a>
 
       <!--Link from hero iocn for adding menu icon-->
-      <svg
+      <svg id="menuicon1"
         class="w-7 h-7 hidden sm:flex md:hidden"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -34,7 +34,7 @@
         />
       </svg>
 
-      <svg
+      <svg id="menuicon2"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -55,6 +55,17 @@
         <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
       </div>
     </nav>
+    <!--Side Nav Bar-->
+    <section id="sidenav" class="bg-green-100 fixed top-0 z-20 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;" >
+      <div class="text-right p-2">
+        <p id="closeicon" class="inline cursor-pointer">X</p>
+      </div>
+    <div class="flex flex-col items-center gap-10 text-gray-600">
+        <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        <a class="hover:underline hover:text-black" href="./product.html">Product</a>
+        <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+      </div>
+      </section>
     <!--Header Section-->
     <section class="bg-green-100 flex justify-center">
       <div class="m-5">
@@ -269,5 +280,9 @@
         <p>&copy; 2026 Greenden website by Arulpriya</p>
       </div>
     </section>
+
+    <script src="index.js">
+
+    </script>
   </body>
 </html>
